@@ -35,10 +35,26 @@ const generateUsage = usage =>{
 ${usage}
     `;
 };
+const generateContributing = contributing =>{
+    if (!contributing){
+        return '';
+    }
+    return `
+${contributing}
+    `;
+};
+const generateTests = tests =>{
+    if (!tests){
+        return '';
+    }
+    return `
+${tests}
+    `;
+};
 
 
 module.exports = readMEData =>{
-    const{title,description, installInfo, usage} = readMEData;
+    const{title,description, installInfo, usage, contributing, tests} = readMEData;
     return `
 ${generateProjectTitle(title)}
 
@@ -50,7 +66,7 @@ ${generateProjectDescription(description)}
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
-* [Tests](#test)
+* [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
@@ -58,6 +74,16 @@ ${generateInstallationInfo(installInfo)}
 
 ## Usage
 ${generateUsage(usage)}
+
+## License
+
+## Contributing
+${generateContributing(contributing)}
+
+## Tests
+${generateTests(tests)}
+
+## Questions
 
 `
 };

@@ -66,6 +66,41 @@ const promptUser = () => {
           }
         }
       },
+      // Contributing
+      {
+        type: 'input',
+        name: 'contributing',
+        message: 'Add guidelines for other users to contribute to your project(Required)',
+        validate: contributing => {
+          if (contributing) {
+            return true;
+          } else {
+            console.log('Please enter contributing Info');
+            return false;
+          }
+        }
+      },
+      // Tests
+      {
+        type: 'input',
+        name: 'tests',
+        message: 'write out the tests for your Application(Required)',
+        validate: tests => {
+          if (tests) {
+            return true;
+          } else {
+            console.log('Please enter testing Info');
+            return false;
+          }
+        }
+      },
+      // License
+      {
+        type: 'checkbox',
+        name: 'license',
+        message: 'Please choose a license for your project',
+        choices: ['MIT', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+      },
     ]);
 };
 
