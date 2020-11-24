@@ -1,5 +1,5 @@
 # Read Me Generator
-(This readME was generated using this generator)
+(This readME was mostly generated using this generator)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
@@ -25,10 +25,12 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ### WalkThrough Video
 
-![](./assets/ReadMeGenerator.webm)
+<https://drive.google.com/file/d/1N792ZT_x8sOseTJsQFvsBrrqCgl0v5Gk/view>
 
 ### Sample ReadME:
-![Sample Read ME](./assets/sample_README.md)
+[Sample Read ME](./assets/sample_README.md)
+
+### Screenshot
 ![](./assets/sampleReadMe.png)
 
 ## License
