@@ -1,11 +1,10 @@
-
 // Setting up NPM packages that we will be using, in this case just Inquirer
 const inquirer = require('inquirer');
 
 // Getting the ReadMe Template
-const generateReadME = require('./src/readme-template');
+const generateReadME = require('../src/readme-template');
 
-const {writeFile} = require('./utils/generate-readme');
+const {writeFile} = require('../utils/generate-readme');
 
 // prompting user for question to anwer the readme generation
 const promptUser = () => {

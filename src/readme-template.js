@@ -4,7 +4,7 @@ const generateProjectTitle = projectTitle =>{
         return '';
     }
     return `
-    # ${projectTitle}`;
+# ${projectTitle}`;
 };
 
 const generateProjectDescription = projectDescription =>{
@@ -12,17 +12,26 @@ const generateProjectDescription = projectDescription =>{
         return '';
     }
     return `
-    ## Description
-    ${projectDescription}
+## Description
+${projectDescription}
     `;
 };
+
 
 module.exports = readMEData =>{
     const{title,description} = readMEData;
 
     return `
-    ${generateProjectTitle(title)}
+${generateProjectTitle(title)}
 
-    ${generateProjectDescription(description)}
+${generateProjectDescription(description)}
+
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Questions](#questions)
     `;
-}
+};
