@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 
 // Getting the ReadMe Template
 const generateReadME = require('./src/readme-template');
+const { license } = require('./test/test-data');
 
 // pointing to the JS script to create the Read Me file
 const {writeFile} = require('./utils/generate-readme');
@@ -96,10 +97,18 @@ const promptUser = () => {
       },
       // License
       {
-        type: 'checkbox',
+        type: 'list',
         name: 'license',
         message: 'Please choose a license for your project',
-        choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0','Unlicense']
+        choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0','Unlicense'],
+        validate: license =>{
+            if (license) {
+                return true;
+              } else {
+                console.log('Please select a License');
+                return false;
+              }
+        }
       },
       //GitHub Name
       {
