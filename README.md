@@ -25,10 +25,10 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ### WalkThrough Video
 
-![](./assets/ReadMeGenerator.mp4)
+![](./assets/ReadMeGenerator.webm)
 
 ### Sample ReadME:
-![SampleReadME](./assets/sample_README.md)
+![Sample Read ME](./assets/sample_README.md)
 ![](./assets/sampleReadMe.png)
 
 ## License
@@ -49,8 +49,7 @@ Please take a look at the Test folder in the repository, it has test-data.js and
 
 ## Questions
 ### Where is my GitHub repository?
-[GitHub](https://github.com/chattean
-    )
+[GitHub](https://github.com/chattean)
 
 ### How to get in Contact with me if you have additional questions?
 
