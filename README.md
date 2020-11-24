@@ -23,12 +23,13 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ## Usage
 
-here is a video demostrating how this readme generator is used:
+### WalkThrough Video
 
-<iframe src="https://drive.google.com/file/d/1N792ZT_x8sOseTJsQFvsBrrqCgl0v5Gk/preview" width="640" height="480"></iframe>
+![](./assets/ReadMeGenerator.mp4)
 
-Sample ReadME file form the video: 
-    
+### Sample ReadME:
+![SampleReadME](./assets/sample_README.md)
+![](./assets/sampleReadMe.png)
 
 ## License
 
