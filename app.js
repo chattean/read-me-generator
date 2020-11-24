@@ -4,12 +4,14 @@ const inquirer = require('inquirer');
 // Getting the ReadMe Template
 const generateReadME = require('./src/readme-template');
 
+// pointing to the JS script to create the Read Me file
 const {writeFile} = require('./utils/generate-readme');
 
 // prompting user for question to anwer the readme generation
 const promptUser = () => {
     return inquirer.prompt([
-      {
+    // Project Title  
+    {
         type: 'input',
         name: 'title',
         message: 'What is your Project Name? (Required)',
@@ -22,6 +24,7 @@ const promptUser = () => {
           }
         }
       },
+      // Project Description
       {
         type: 'input',
         name: 'description',
@@ -35,6 +38,7 @@ const promptUser = () => {
           }
         }
       },
+      // Installation Info
       {
         type: 'input',
         name: 'installInfo',
@@ -44,6 +48,20 @@ const promptUser = () => {
             return true;
           } else {
             console.log('Please enter Installation Info');
+            return false;
+          }
+        }
+      },
+      // Usage
+      {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide instructions and examples for use(Required)',
+        validate: usage => {
+          if (usage) {
+            return true;
+          } else {
+            console.log('Please enter usage Info');
             return false;
           }
         }

@@ -1,3 +1,5 @@
+const { usage } = require("../test/test-data");
+
 // Create component function to populate read Me
 const generateProjectTitle = projectTitle =>{
     if (!projectTitle){
@@ -25,9 +27,18 @@ const generateInstallationInfo = installInfo =>{
     `;
 };
 
+const generateUsage = usage =>{
+    if (!usage){
+        return '';
+    }
+    return `
+${usage}
+    `;
+};
+
 
 module.exports = readMEData =>{
-    const{title,description, installInfo} = readMEData;
+    const{title,description, installInfo, usage} = readMEData;
     return `
 ${generateProjectTitle(title)}
 
@@ -44,6 +55,9 @@ ${generateProjectDescription(description)}
 
 ## Installation
 ${generateInstallationInfo(installInfo)}
+
+## Usage
+${generateUsage(usage)}
 
 `
 };
