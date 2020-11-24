@@ -103,8 +103,32 @@ const promptUser = () => {
       },
       //GitHub Name
       {
-          
-      }
+        type: 'input',
+        name: 'username',
+        message: 'Please enter your Github UserName(Required)',
+        validate: username => {
+          if (username) {
+            return true;
+          } else {
+            console.log('Please enter GitHub username');
+            return false;
+          }
+        }
+      },
+      // Email
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Plese enter you contact Email address (Required)',
+        validate: tests => {
+          if (tests) {
+            return true;
+          } else {
+            console.log('Please enter your email address');
+            return false;
+          }
+        }
+      },
     ]);
 };
 

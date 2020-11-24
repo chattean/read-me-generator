@@ -135,9 +135,24 @@ A license with no conditions whatsoever which dedicates works to the public doma
 `
     };
 };
+const generateUserName = username => {
+    if (!username) {
+        return '';
+    }
+    return `${username}
+    `;
+};
+const generateEmail = email => {
+    if (!email) {
+        return '';
+    }
+    return `
+${email}
+    `;
+};
 
 module.exports = readMEData => {
-    const { title, description, installInfo, usage, contributing, tests, license } = readMEData;
+    const { title, description, installInfo, usage, contributing, tests, license, username, email} = readMEData;
     return `
 ${generateProjectTitle(title)}
 
@@ -170,10 +185,10 @@ ${generateContributing(contributing)}
 ${generateTests(tests)}
 
 ## Questions
-# What is my GitHub Name?
-${generateGitHubName(githubname)}
+### Where is my GitHub repository?
+[GitHub](https://github.com/${generateUserName(username)})
 
-# How to get in Contact with me?
+### How to get in Contact with me if you have additional questions?
 ${generateEmail(email)}
 
 `
