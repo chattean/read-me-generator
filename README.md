@@ -18,7 +18,10 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ## Installation
 
-    You need to have inquirer package: install npm inquirer
+    Go to the parent folder in terminal
+    then just run 
+    node app.js 
+
     
 
 ## Usage
