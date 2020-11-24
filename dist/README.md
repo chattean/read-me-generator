@@ -1,17 +1,22 @@
 
 
-# test title
-
+# Read Me generator
 
 ## Description
-this will generate read me after you answer all the questions
+
+This will create things you dont want to create
     
 
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
-* License(#license)
-* Contributing(#contributing)
-* Tests(#test)
-* Questions(#questions)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Questions](#questions)
+
+## Installation
+
+    1. install npm,
     
+

@@ -12,18 +12,26 @@ const generateProjectDescription = projectDescription =>{
         return '';
     }
     return `
-## Description
 ${projectDescription}
+    `;
+};
+
+const generateInstallationInfo = installInfo =>{
+    if (!installInfo){
+        return '';
+    }
+    return `
+    ${installInfo}
     `;
 };
 
 
 module.exports = readMEData =>{
-    const{title,description} = readMEData;
-
+    const{title,description, installInfo} = readMEData;
     return `
 ${generateProjectTitle(title)}
 
+## Description
 ${generateProjectDescription(description)}
 
 ## Table of Contents
@@ -33,5 +41,9 @@ ${generateProjectDescription(description)}
 * [Contributing](#contributing)
 * [Tests](#test)
 * [Questions](#questions)
-    `;
+
+## Installation
+${generateInstallationInfo(installInfo)}
+
+`
 };
