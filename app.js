@@ -99,8 +99,12 @@ const promptUser = () => {
         type: 'checkbox',
         name: 'license',
         message: 'Please choose a license for your project',
-        choices: ['MIT', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+        choices: ['MIT', 'GNU GPLv3', 'GNU AGPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'Boost Software License 1.0','Unlicense']
       },
+      //GitHub Name
+      {
+          
+      }
     ]);
 };
 
