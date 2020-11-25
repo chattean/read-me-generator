@@ -20,9 +20,7 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
     Go to the parent folder in terminal
     then just run 
-    node app.js 
-
-    
+    node app.js     
 
 ## Usage
 

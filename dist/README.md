@@ -8,7 +8,7 @@
 
 ## Description
 
-This will generate a Read Me for your Project. Just answer the questions accurately and you are good to go.
+This will generate read me for you after you answer all the questions
     
 
 ## Table of Contents
@@ -21,12 +21,12 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ## Installation
 
-    You need to have inquirer package: install npm inquirer
+    Install inquirer first 
     
 
 ## Usage
 
-Will have a link to this video or any other walkthrough video and/or screenshot
+please look at test.js and test-data.js
     
 
 ## License
@@ -37,12 +37,12 @@ A short and simple permissive license with conditions only requiring preservatio
 
 ## Contributing
 
-Please contribute safely
+Contribute safely
     
 
 ## Tests
 
-Please take a look at the Test folder in the repository, it has test-data.js and test.js is present in the root folder
+please look at test.js and test-data
     
 
 ## Questions
@@ -52,6 +52,6 @@ Please take a look at the Test folder in the repository, it has test-data.js and
 
 ### How to get in Contact with me if you have additional questions?
 
-anujchatterjee@gmail.com
+test@test.com
     
 
