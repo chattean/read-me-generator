@@ -26,7 +26,7 @@ This will generate a Read Me for your Project. Just answer the questions accurat
 
 ### WalkThrough Video
 
-<https://drive.google.com/file/d/1N792ZT_x8sOseTJsQFvsBrrqCgl0v5Gk/view>
+<https://drive.google.com/file/d/1ux8LlpolLZ5L9LUfjdY7ZBVE0GE3n84R/view>
 
 ### Sample ReadME:
 [Sample Read ME](./assets/sample_README.md)
